@@ -49,21 +49,21 @@
 
             //Bonustrack: headers +  formato HTML
             // Para enviar un correo HTML, debe establecerse la cabecera Content-type
-            // $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-            // $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+            $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
             // Cabeceras adicionales
-            // $cabeceras .= 'To:'.$destinatario;
-            // $cabeceras .= 'From: '. $nombre.'<'.$email.'>' . "\r\n";
+            $cabeceras .= 'To:'.$destinatario;
+            $cabeceras .= 'From: '. $nombre.'<'.$email.'>' . "\r\n";
 
 
             
             // 3) envio de datos
-            $envio1 = mail($destinatario,$asunto,$cuerpoMensaje);
+            $envio1 = mail($destinatario,$asunto,$cuerpoMensaje,$cabeceras);
 
             // 4) Evaluacion del envio
-             if($envio1 === false){
+             if($envio1 === true){
                  echo "<span class='alert alert-success'>Gracias ".$nombre." por escribirnos. Nos comunicaremos a la brevedad</span>";
-                 echo "Se envio un correo a ".$destinatario." para verificar el funcionamiento..."
+                 echo "Se envio un correo a ".$destinatario." para verificar el funcionamiento...";
              } else{
                  echo "<span class='alert alert-danger'>Error en el envío.  Escribanos a ".$destinatario."</span>";
              }  
