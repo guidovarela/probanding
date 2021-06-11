@@ -17,15 +17,15 @@
         <form action="enviardatos.php" method="POST">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="nombre" >
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="nombre" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje" required></textarea>
             </div>
             <input class="btn btn-outline-primary" type="submit" value="Enviar">
         </form>

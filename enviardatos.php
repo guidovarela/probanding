@@ -15,16 +15,60 @@
         <hr>
     <div class="form w-75">
         <?php
+            // Cantidad de datos en POST
+            //echo count($_POST);
 
-echo count($_POST);
+            // echo "Datos recibidos";
 
-echo "Datos recibidos";
-            foreach($_POST as $datos){
-                echo $datos."<br>";
-            }
+            // Recorrer el array POST
+            // foreach($_POST as $datos){
+            //     echo $datos."<br>";
+            // }
+
             // $_POST['nombre'] 
             // $_POST['email'] 
             // $_POST['mensaje'] 
+
+    // Enviar la info por email
+
+            //1) Definir los datos a enviar -> armar el array POST
+            $nombre = $_POST['nombre'];
+            $email =  $_POST['email'];
+            $mensaje = $_POST['mensaje'];
+
+            /*echo $nombre;
+            echo $email;
+            echo $mensaje;*/
+
+            //2) Cargar los datos del envio -> destino, asunto, mensaje 
+            $destinatario = "dev@mail.com;cliente@mail.com";
+            $asunto = "Nuevo mensaje del sitio";
+            $cuerpoMensaje = "Nombre: ".$nombre."<br> Email: ".$email."<br> Mensaje: ".$mensaje;
+
+            //echo $cuerpoMensaje
+
+            //Bonustrack: headers +  formato HTML
+            // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+            $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+            $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            // Cabeceras adicionales
+            $cabeceras .= 'To:'.$destinatario;
+            $cabeceras .= 'From: '. $nombre.'<'.$email.'>' . "\r\n";
+
+
+            
+            // 3) envio de datos
+            @$envio1 = mail($destinatario,$asunto,$cuerpoMensaje, $cabeceras);
+
+            // 4) Evaluacion del envio
+             if($envio1 === false){
+                 echo "<span class='alert alert-success'>Gracias ".$nombre." por escribirnos. Nos comunicaremos a la brevedad</span>";
+             } else{
+                 echo "<span class='alert alert-danger'>Error en el envío.  Escribanos a ".$destinatario."</span>";
+             }  
+
+
+             //Enviar todo esto a MySQL
         ?>
     </div>
 </div>
