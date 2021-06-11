@@ -41,7 +41,7 @@
             echo $mensaje;*/
 
             //2) Cargar los datos del envio -> destino, asunto, mensaje 
-            $destinatario = "dev@mail.com;cliente@mail.com";
+            $destinatario = "guido.varela@gmail.com";
             $asunto = "Nuevo mensaje del sitio";
             $cuerpoMensaje = "Nombre: ".$nombre."<br> Email: ".$email."<br> Mensaje: ".$mensaje;
 
