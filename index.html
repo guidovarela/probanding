@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+
+    <header class="container-fluid header">
+        <div class="container">
+            <!-- <div class="logo">
+                <a href="" class="">
+                    <h1 class="m-0 text-white">pd2</h1>
+                </a>
+            </div> -->
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+
+                <div class="container-fluid">
+
+                    <!-- Logo -->
+                  <a class="navbar-brand" href="#">
+                    <h1 class=" text-white">pd2</h1>
+                  </a>
+                  
+                  <!-- btn hamburguer -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <!-- Menu de navegacion -->
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link " class="text-white"  aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" class="text-white"  href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" class="text-white"  href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" class="text-white" href="#">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </nav>
+        </div>
+    </header>
+    <div class="header2 container-fluid p-3"></div>
+
+    <div class="slider container-fluid px-0 mb-5">
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Menu de indicadores - inferior -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Contenido del Carousel -->
+            <div class="carousel-inner">
+              
+                <div class="carousel-item active">
+                <img src="https://http2.mlstatic.com/D_NQ_679105-MLA46081394025_052021-OO.webp" class="d-block w-100" alt="Imegn Carousel Home 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="row">
+                      <div class="col">
+                          <h5>First slide label</h5>
+                      </div>
+                      <div class="col">
+                          <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://http2.mlstatic.com/D_NQ_893116-MLA46331155309_062021-OO.webp" class="d-block w-100" alt="Imegn Carousel Home 2">
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://http2.mlstatic.com/D_NQ_726980-MLA46363591257_062021-OO.webp" class="d-block w-100" alt="Imegn Carousel Home 3">
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://http2.mlstatic.com/D_NQ_853786-MLA46247538647_062021-OO.webp" class="d-block w-100" alt="Imagen Carousel Home 4">
+              </div>
+
+            </div>
+
+            <!-- Menu de Flechas < > -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+        </div> <!-- cierre #carousel -->
+
+    </div>
+    
+    <!-- contenido -->
+    <div class="container-fluid content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="noticia">
+                        <figure>
+                            <img class="img-fluid" src="img/nota1.jpg" alt="">
+                        </figure>
+                        <div class="contentNoti">
+                            <h3 class="fs-1">Titulo de la nota</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nesciunt, neque alias culpa recusandae consectetur doloribus blanditiis possimus sapiente laborum eveniet optio at iusto exercitationem quidem similique quas deleniti eligendi!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="noticia">
+                        <figure>
+                            <img class="img-fluid" src="img/nota2.jpg" alt="">
+                        </figure>
+                        <div class="contentNoti">
+                            <h3 class="fs-1">Titulo de la nota</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nesciunt, neque alias culpa recusandae consectetur doloribus blanditiis possimus sapiente laborum eveniet optio at iusto exercitationem quidem similique quas deleniti eligendi!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="noticia">
+                        <figure class="text-center">
+                            <img class="img-fluid" src="img/nota3.jpg" alt="">
+                        </figure>
+                        <div class="contentNoti">
+                            <h3 class="fs-1">Titulo de la nota</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis nesciunt, neque alias culpa recusandae consectetur doloribus blanditiis possimus sapiente laborum eveniet optio at iusto exercitationem quidem similique quas deleniti eligendi!
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- .col-4 -->
+
+                <div class="col-12 bg-secondary p-5 rounded mt-5">
+                    <!-- <a href="">
+                        <img src="img/banner.jpg" alt="">
+                    </a> -->  
+                </div>
+            </div> <!-- .row -->
+
+        </div> <!-- .container -->
+    </div> <!-- .content -->
+
+    <hr>
+    <section class="container-fluid my-5">
+        <div class="container">
+            <h2>modal</h2>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Ver términos y condiciones
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                <div class="modal-dialog">
+                    
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Terminos y condiciones</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero neque nam voluptate voluptates cum doloremque officiis ipsam iusto voluptatem aut animi, explicabo, adipisci quia sed harum necessitatibus dicta velit qui.</p><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero neque nam voluptate voluptates cum doloremque officiis ipsam iusto voluptatem aut animi, explicabo, adipisci quia sed harum necessitatibus dicta velit qui.</p>
+                    </div>
+                    <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div> -->
+                </div>
+                </div>
+            </div>
+  
+        </div>
+    </section>
+
+    <hr>
+    <section id="contacto" class="container-fluid my-5">
+        <div class="container">
+            <h3>Contacto</h3>
+            <form action="" method="post" class="w-50">
+                <div class="mb-3">
+                    <label for="campoEmail" class="form-label">Nombre</label>
+                    <input name="nombre" type="text" class="form-control" id="campoEmail">
+                </div>
+                <div class="mb-3">
+                    <label for="campoEmail" class="form-label">Email</label>
+                    <input name="email" type="email" class="form-control" id="campoEmail" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="campoMensaje" class="form-label">Mensaje</label>
+                    <textarea name="mensaje" class="form-control" id="campoMensaje" rows="3"></textarea>
+                </div>
+                <hr>
+                <input type="submit" value="Enviar" class="btn btn-success">
+            </form>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer p-5 mt-5">
+        <div class="container">
+            <p class="text-center fs-6 text-white ">
+                &copy; 2021 - Desarrollado por <a href="">Yo</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+</html>
